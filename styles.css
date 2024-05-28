@@ -9,12 +9,14 @@ body {
 }
 
 .card {
-    width: 300px;
-    height: 400px;
+    width: 90vw; /* ใช้หน่วย vw เพื่อให้การ์ดมีความกว้างเป็น 90% ของหน้าจอ */
+    max-width: 400px; /* กำหนดความกว้างสูงสุด */
+    height: 70vh; /* ใช้หน่วย vh เพื่อให้การ์ดมีความสูงเป็น 70% ของหน้าจอ */
+    max-height: 600px; /* กำหนดความสูงสูงสุด */
     perspective: 1000px;
     cursor: pointer;
     position: relative;
-    overflow: hidden; /* Prevent confetti from overflowing */
+    overflow: hidden; /* ป้องกัน confetti ออกจากขอบการ์ด */
 }
 
 .front, .inside {
@@ -55,10 +57,11 @@ body {
 h1, h2 {
     color: #ff6347;
     text-shadow: 2px 2px #fff;
+    text-align: center;
 }
 
 img {
-    max-width: 100%; /* Ensure images don't overflow */
+    max-width: 100%; /* ป้องกันไม่ให้รูปภาพใหญ่เกิน */
     height: auto;
 }
 
@@ -89,8 +92,8 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Prevents confetti from going outside the card */
-    pointer-events: none; /* Allow clicks to pass through */
+    overflow: hidden; /* ป้องกัน confetti ออกนอกขอบการ์ด */
+    pointer-events: none; /* ให้การคลิกผ่าน */
 }
 
 .confetti {
@@ -109,15 +112,15 @@ img {
     }
     100% {
         opacity: 0;
-        transform: translateY(400px) rotate(360deg); /* Adjusted to fit the new card height */
+        transform: translateY(70vh) rotate(360deg); /* ปรับให้เข้ากับความสูงของการ์ดใหม่ */
     }
 }
 
 /* Responsive design for mobile devices */
 @media (max-width: 600px) {
     .card {
-        width: 90vw;
-        height: 70vh;
+        width: 90vw; /* ให้การ์ดมีความกว้างเป็น 90% ของหน้าจอ */
+        height: 70vh; /* ให้การ์ดมีความสูงเป็น 70% ของหน้าจอ */
     }
 
     @keyframes confetti {
@@ -127,7 +130,7 @@ img {
         }
         100% {
             opacity: 0;
-            transform: translateY(70vh) rotate(360deg); /* Adjusted to fit the new card height */
+            transform: translateY(70vh) rotate(360deg); /* ปรับให้เข้ากับความสูงของการ์ดบนมือถือ */
         }
     }
 }
