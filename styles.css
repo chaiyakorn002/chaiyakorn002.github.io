@@ -11,8 +11,7 @@ body {
 .card {
     width: 90vw; /* ใช้หน่วย vw เพื่อให้การ์ดมีความกว้างเป็น 90% ของหน้าจอ */
     max-width: 400px; /* กำหนดความกว้างสูงสุด */
-    height: 70vh; /* ใช้หน่วย vh เพื่อให้การ์ดมีความสูงเป็น 70% ของหน้าจอ */
-    max-height: 600px; /* กำหนดความสูงสูงสุด */
+    height: auto; /* ใช้ความสูงอัตโนมัติเพื่อให้การ์ดยืดหยุ่น */
     perspective: 1000px;
     cursor: pointer;
     position: relative;
@@ -33,6 +32,8 @@ body {
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 20px; /* เพิ่ม padding เพื่อความสวยงาม */
+    box-sizing: border-box; /* รวม padding และ border เข้าไปในขนาด */
 }
 
 .front {
@@ -42,7 +43,6 @@ body {
 
 .inside {
     transform: rotateY(180deg);
-    padding: 20px;
     background: #ffebcd;
 }
 
@@ -120,7 +120,7 @@ img {
 @media (max-width: 600px) {
     .card {
         width: 90vw; /* ให้การ์ดมีความกว้างเป็น 90% ของหน้าจอ */
-        height: 70vh; /* ให้การ์ดมีความสูงเป็น 70% ของหน้าจอ */
+        height: auto; /* ให้การ์ดมีความสูงอัตโนมัติ */
     }
 
     @keyframes confetti {
