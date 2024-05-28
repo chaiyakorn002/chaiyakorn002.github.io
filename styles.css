@@ -126,7 +126,7 @@ img {
 @media (max-width: 600px) {
   .card {
     width: 90vw; /* ให้การ์ดมีความกว้างเป็น 90% ของหน้าจอ */
-    height: auto; /* ให้การ์ดมีความสูงอัตโนมัติ */
+    height: 80vh; /* ให้การ์ดมีความสูงอัตโนมัติ */
   }
 
   @keyframes confetti {
