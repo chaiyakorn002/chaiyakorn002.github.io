@@ -17,7 +17,7 @@ function showConfetti() {
         confetti.style.width = size;
         confetti.style.height = size;
         confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-        confetti.style.left = Math.random() * window.innerWidth + 'px';
+        confetti.style.left = Math.random() * 100 + '%';  /* Adjusted to fit within card */
         
         confettiContainer.appendChild(confetti);
         
