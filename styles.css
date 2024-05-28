@@ -11,11 +11,9 @@ body {
 .card {
     width: 90vw; /* ใช้หน่วย vw เพื่อให้การ์ดมีความกว้างเป็น 90% ของหน้าจอ */
     max-width: 400px; /* กำหนดความกว้างสูงสุด */
-    height: auto; /* ใช้ความสูงอัตโนมัติเพื่อให้การ์ดยืดหยุ่น */
     perspective: 1000px;
     cursor: pointer;
     position: relative;
-    overflow: hidden; /* ป้องกัน confetti ออกจากขอบการ์ด */
 }
 
 .front, .inside {
