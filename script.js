@@ -1,6 +1,7 @@
-document.querySelector('.card').addEventListener('click', function() {
-    this.classList.toggle('flipped');
-});
+function toggleCard() {
+    const card = document.querySelector('.card');
+    card.classList.toggle('flipped');
+}
 
 function showSurprise() {
     document.getElementById("surprise").style.display = "block";
