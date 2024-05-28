@@ -123,7 +123,7 @@ img {
 }
 
 /* Responsive design for mobile devices */
-@media (max-width: 600px) {
+@media (max-width: 200px) {
   .card {
     width: 90vw; /* ให้การ์ดมีความกว้างเป็น 90% ของหน้าจอ */
     height: 80vh; /* ให้การ์ดมีความสูงอัตโนมัติ */
